@@ -51,7 +51,7 @@
     <script>
        $l(() => {
          $l('li').on('click', () => alert('clicked'));
-         $l('.remove-me').remove();
+         $l('.remove').remove();
          $l.ajax({
            method: "GET",
            url:  "http://api.openweathermap.org/data/2.5/weather",
@@ -65,9 +65,9 @@
        });
      </script>
 
-   <div class="my-div cool">
-     <h1>Hello!</h1>
-     <p class="remove-me">Remove me!</p>
+   <div>
+     <h1>Do not remove</h1>
+     <p class="remove">Remove</p>
    </div>
 
    <div class="weather">
